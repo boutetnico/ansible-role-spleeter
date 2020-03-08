@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Nicolas Boutet
+  description: Install Spleeter
+  license: MIT
+  min_ansible_version: 2.6
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - buster
+  galaxy_tags:
+    - deezer
+    - spleeter
+    - audio
+    - separation
+dependencies: []

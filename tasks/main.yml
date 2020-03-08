@@ -1,0 +1,20 @@
+---
+- name: Ensure dependencies are installed
+  apt:
+    name: "{{ spleeter_dependencies }}"
+    state: present
+
+- name: Ensure pip is installed
+  apt:
+    name: python{{ '3' if ansible_python.version.major == 3 else '' }}-pip
+    state: present
+
+- name: Install pip dependencies
+  pip:
+    name: "{{ spleeter_pip_dependencies }}"
+    state: present
+
+- name: Install Spleeter
+  pip:
+    name: spleeter
+    state: present

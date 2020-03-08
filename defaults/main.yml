@@ -1,0 +1,6 @@
+---
+spleeter_dependencies:
+  - ffmpeg
+
+spleeter_pip_dependencies:
+  - setuptools
